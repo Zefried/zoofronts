@@ -7,8 +7,11 @@ import AddLocation from './Panels/AdminPanels/AddLocation/LocationCompo';
 import ViewLocations from './Panels/AdminPanels/ViewLocation/ViewLocationCompo';
 import AddBus from './Panels/AdminPanels/AddBus/AddBusCompo';
 import ViewBus from './Panels/AdminPanels/ViewBus/ViewBus';
-import WebHome from './WebPortal/Components/Home';
 import AddProperty from './Panels/AdminPanels/Property/AddProperty/AddProperty';
+import WebHome from './WebPortal/Components/WebHome';
+import WebSlider from './WebPortal/Components/SubCompo/WebSlider';
+import CommercialSlider from './WebPortal/Components/SubCompo/CommercialSlider';
+
 
 function App() {
 
@@ -56,6 +59,10 @@ function App() {
 
           {/* Admin panel route ends her */}
 
+          <Route path='/' element={<WebHome></WebHome>} />
+          <Route path='/a' element={<WebSlider></WebSlider>} />
+
+          <Route path='/test' element={<CommercialSlider></CommercialSlider>} />
 
 
         </Routes>
