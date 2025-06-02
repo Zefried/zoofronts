@@ -32,7 +32,13 @@ const AddProperty = () => {
         brokerage: '',
 
         // optional
-        overheadMap: ''
+        overheadMap: '',
+
+        // plot & commercial
+        plotType:'',
+        commercialType:'',
+
+
     });
 
     const locations = ['New York', 'Los Angeles', 'Chicago', 'Houston']; // Example locations
@@ -44,8 +50,8 @@ const AddProperty = () => {
     };
 
 
-
     console.log(formData, 'abc');
+    
     return (
         <>
             <PropertyConstantFields 
